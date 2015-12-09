@@ -23,3 +23,13 @@ function getAvg(prices) {
   var avg = getSum(prices) / prices.length;
   return avg.toFixed(2);
 }
+
+function getCount(prices) {
+  var count = 0;
+  for (var i = 0; i < prices.length; i++) {
+    if(prices[i].selected){
+      count++
+    }
+  }
+  return count;
+}

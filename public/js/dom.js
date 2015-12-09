@@ -20,6 +20,7 @@ Hints for the first problem:
 
 var sumAll = document.getElementById("sum-all");
 var avgAll = document.getElementById("average-all");
+var countSelected = document.getElementById("count-selected");
 var prices = document.getElementsByClassName('all-prices')[0].options;
 var results = document.getElementById('results');
 
@@ -30,4 +31,8 @@ sumAll.addEventListener("click", function () {
 
 avgAll.addEventListener("click", function () {
   results.innerHTML = "$" + getAvg(prices);
+})
+
+countSelected.addEventListener("click", function () {
+  results.innerHTML = getCount(prices);
 })
