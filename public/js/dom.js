@@ -22,6 +22,7 @@ var sumAll = document.getElementById("sum-all");
 var avgAll = document.getElementById("average-all");
 var countSelected = document.getElementById("count-selected");
 var sumSelected = document.getElementById("sum-selected");
+var avgSelected = document.getElementById("average-selected");
 var prices = document.getElementsByClassName('all-prices')[0].options;
 var results = document.getElementById('results');
 
@@ -40,4 +41,8 @@ countSelected.addEventListener("click", function () {
 
 sumSelected.addEventListener("click", function () {
   results.innerHTML = "$"+ getSelectedSum(prices);
+})
+
+avgSelected.addEventListener("click", function () {
+  results.innerHTML = "$"+ getSelectedAvg(prices);
 })

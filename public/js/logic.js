@@ -44,3 +44,9 @@ function getSelectedSum(prices){
   }
    return total.toFixed(2);
 }
+
+function getSelectedAvg(prices) {
+  var count = getCount(prices) || 1;
+  var avg = getSelectedSum(prices) / count;
+  return avg.toFixed(2);
+}
