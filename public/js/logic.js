@@ -18,3 +18,8 @@ function getSum(prices){
   }
   return sum.toFixed(2);
 }
+
+function getAvg(prices) {
+  var avg = getSum(prices) / prices.length;
+  return avg.toFixed(2);
+}

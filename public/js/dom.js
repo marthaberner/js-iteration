@@ -18,11 +18,16 @@ Hints for the first problem:
 // append the sum to the DOM
 
 
-var button = document.getElementById("sum-all");
+var sumAll = document.getElementById("sum-all");
+var avgAll = document.getElementById("average-all");
 var prices = document.getElementsByClassName('all-prices')[0].options;
 var results = document.getElementById('results');
 
 
-button.addEventListener("click", function () {
+sumAll.addEventListener("click", function () {
   results.innerHTML = "$" + getSum(prices);
+})
+
+avgAll.addEventListener("click", function () {
+  results.innerHTML = "$" + getAvg(prices);
 })
